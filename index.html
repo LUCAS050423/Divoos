@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divoos - Reserva de Voos</title>
+  <style>
+    /* ====== ESTILO GERAL ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #3b82f6, #9333ea);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #fff;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    input, select {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #2563eb;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✈️ Divoos - Reserva de Voos</h1>
+  </header>
+
+  <main>
+    <h2>Reserve seu próximo voo</h2>
+    <form>
+      <label for="origem">Origem</label>
+      <input type="text" id="origem" placeholder="Digite a cidade de origem" required>
+
+      <label for="destino">Destino</label>
+      <input type="text" id="destino" placeholder="Digite a cidade de destino" required>
+
+      <label for="data-ida">Data de ida</label>
+      <input type="date" id="data-ida" required>
+
+      <label for="data-volta">Data de volta</label>
+      <input type="date" id="data-volta">
+
+      <label for="passageiros">Passageiros</label>
+      <select id="passageiros" required>
+        <option value="1">1 Passageiro</option>
+        <option value="2">2 Passageiros</option>
+        <option value="3">3 Passageiros</option>
+        <option value="4">4 Passageiros</option>
+      </select>
+
+      <button type="submit">Buscar Voos</button>
+    </form>
+  </main>
+
+  <footer>
+    © 2025 Divoos — Todos os direitos reservados.
+  </footer>
+</body>
+</html>
